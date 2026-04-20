@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+////////lazy loading
+import { lazy, Suspense } from "react";
+const Header = lazy(() => import("@/components/Header"));
+const Footer = lazy(() => import("@/components/Footer"));
+// import Header from "@/components/Header";
+// import Footer from "@/components/Footer";
 import SEO, { SITE_URL } from "@/components/SEO";
 
 const blogPosts = [
@@ -15,29 +19,73 @@ const blogPosts = [
 ];
 
 const Blog = () => {
-  const blogJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    name: "RummyHub Blog & Tips",
-    url: `${SITE_URL}/blog`,
-    description: "Expert rummy strategies, app reviews, latest offers, and industry news.",
-    blogPost: blogPosts.map((p) => ({
-      "@type": "BlogPosting",
-      headline: p.title,
-      url: `${SITE_URL}/blog/${p.slug}`,
-      datePublished: p.date,
-      articleSection: p.category,
-    })),
-  };
+ 
+      const blogJsonLd = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        name: "RummyHub Blog",
+        url: `${SITE_URL}/blog`,
+        description:
+          "Latest articles on rummy strategies, tips, app reviews, and bonus offers in India.",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: SITE_URL,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: `${SITE_URL}/blog`,
+          },
+        ],
+      },
+//       It tells Google that each blog post is an article (BlogPosting).
+// It helps show details like title, date, and description in search results.
+// It improves your chances of getting rich results for blog posts.
+// It helps Google understand your blog content better
+      ...blogPosts.map((p) => ({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: p.title,
+        description: p.excerpt,
+        url: `${SITE_URL}/blog/${p.slug}`,
+        datePublished: p.date,
+        author: {
+          "@type": "Organization",
+          name: "RummyHub",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "RummyHub",
+          logo: {
+            "@type": "ImageObject",
+            url: `${SITE_URL}/favicon.ico`,
+          },
+        },
+        articleSection: p.category,
+      })),
+      ];
 
   return (
     <div className="min-h-screen bg-background">
+    
+      {/* ////////////////added keyword here for better rich */}
       <SEO
-        title="Rummy Blog & Tips — Strategies, Reviews & Offers | RummyHub"
-        description="Expert rummy strategies, in-depth app reviews, latest welcome bonuses and the legal landscape of online rummy in India."
+        title="Rummy Blog & Tips — Strategies, Guides & Offers in India | RummyHub"
+        description="Read expert rummy strategies, beginner guides, app reviews, latest bonuses, and legal updates about online rummy in India."
         path="/blog"
         jsonLd={blogJsonLd}
-      />
+        keywords="rummy blog india, rummy strategies, rummy tips, best rummy apps, online rummy guide, rummy bonuses india, rummy tricks, play rummy online"
+        type="website"
+/>
       <Header />
 
       <section className="bg-gradient-hero py-16 md:py-20">
