@@ -41,7 +41,7 @@ RHO.V1/
 
 🚀 Getting Started
 1. Clone the repository
-git clone https://github.com/your-username/rho-v1.git
+git clone https://github.com/divyesh0422/rho-v1.git
 cd rho-v1
 2. Install dependencies
 npm install
