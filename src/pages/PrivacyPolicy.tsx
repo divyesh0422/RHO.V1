@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+////////lazy loading
+import { lazy, Suspense } from "react";
+const Header = lazy(() => import("@/components/Header"));
+const Footer = lazy(() => import("@/components/Footer"));
 import SEO from "@/components/SEO";
 
 const PrivacyPolicy = () => (
@@ -8,8 +10,13 @@ const PrivacyPolicy = () => (
     <SEO
       title="Privacy Policy | RummyHub"
       description="Read how RummyHub collects, uses and protects your personal information when you browse our rummy app reviews and comparisons."
+      ///added keyword for better rich  
+      keywords="privacy policy rummyhub, user data protection india, rummy website privacy, cookies policy india, online privacy policy"
+        type="article"
+      
       path="/privacy"
     />
+  
     <Header />
     <section className="bg-gradient-hero py-14">
       <div className="container text-center">

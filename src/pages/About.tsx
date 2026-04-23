@@ -1,19 +1,60 @@
 import { motion } from "framer-motion";
 import { Shield, Users, Award, Heart, Target, Eye } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+////////lazy loading
+import { lazy, Suspense } from "react";
+const Header = lazy(() => import("@/components/Header"));
+const Footer = lazy(() => import("@/components/Footer"));
 import SEO, { SITE_URL } from "@/components/SEO";
 
-const aboutJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "RummyHub",
-  url: SITE_URL,
-  logo: `${SITE_URL}/favicon.ico`,
-  description: "India's most trusted platform for discovering, comparing, and downloading the best rummy apps.",
-  sameAs: [],
-};
-
+const aboutJsonLd = [
+  {
+//     Tells Google who you are (your brand).
+// Helps build trust and identity.
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "RummyHub",
+    url: SITE_URL,
+    logo: `${SITE_URL}/favicon.ico`,
+    description:
+      "India's most trusted platform for discovering, comparing, and downloading the best rummy apps.",
+  },
+//   Tells Google this is your main website.
+// Helps with site understanding and search features.
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "RummyHub",
+    url: SITE_URL,
+  },
+//   Tells Google this page is about your company.
+// Improves SEO relevance for “about” content.
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About RummyHub",
+    url: `${SITE_URL}/about`,
+    description:
+      "Learn about RummyHub's mission, team, and values. Trusted rummy app comparison platform in India.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "About",
+        item: `${SITE_URL}/about`,
+      },
+    ],
+  },
+];
 const values = [
   { icon: Shield, title: "Trust & Safety", desc: "Every app we list undergoes rigorous verification for fair play, RNG certification, and secure payments." },
   { icon: Users, title: "Community First", desc: "We serve over 10 million players across India, helping them find the best and safest rummy platforms." },
@@ -31,11 +72,16 @@ const team = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      
       <SEO
         title="About RummyHub — India's Trusted Rummy App Guide"
-        description="Learn about RummyHub's mission, values, and team. We help millions of Indian players find safe, verified rummy apps with the best bonuses."
+        description="Learn about RummyHub's mission, values, and expert team. Discover safe and verified rummy apps in India with real cash rewards."
         path="/about"
         jsonLd={aboutJsonLd}
+        ////////added keyword here for better reach
+        keywords="rummy apps india, best rummy apps, real cash rummy, safe rummy apps, rummyhub"
+        image={`${SITE_URL}/cover.jpg`}
+        type="website"
       />
       <Header />
 
@@ -51,7 +97,7 @@ const About = () => {
         </div>
       </section>
 
-      <main className="container py-12">
+      <main className="container py-12" role="main">
         {/* Mission */}
         <motion.section initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="bg-card rounded-2xl border border-border p-8 shadow-card flex flex-col justify-center">
@@ -78,7 +124,7 @@ const About = () => {
         <motion.section initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
           <h2 className="font-heading text-2xl font-bold text-foreground text-center mb-8">What We Stand For</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {values.map((v, i) => (
+            {Array.isArray(values) && values.map((v, i) => (
               <motion.div key={v.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-card rounded-2xl border border-border p-6 text-center shadow-card">
                 <div className="w-12 h-12 rounded-xl bg-gradient-hero mx-auto mb-4 flex items-center justify-center">
                   <v.icon className="w-5 h-5 text-primary-foreground" />
@@ -94,10 +140,10 @@ const About = () => {
         <motion.section initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-heading text-2xl font-bold text-foreground text-center mb-8">Our Team</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-            {team.map((t, i) => (
+            {Array.isArray(team) && team.map((t, i) => (
               <motion.div key={t.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-card rounded-2xl border border-border p-6 text-center shadow-card">
                 <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${t.color} mx-auto mb-3 flex items-center justify-center text-primary-foreground font-heading font-bold text-xl`}>
-                  {t.name.charAt(0)}
+                  {t?.name?.charAt(0)|| "?"}
                 </div>
                 <h3 className="font-heading font-bold text-foreground text-sm">{t.name}</h3>
                 <p className="text-muted-foreground text-xs mt-0.5">{t.role}</p>

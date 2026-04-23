@@ -2,9 +2,11 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Star, Download, Gift, ArrowLeft, Shield, Smartphone, CreditCard, Gamepad, ThumbsUp, ThumbsDown, Share2, MessageCircle, Send, Calendar, Users, ChevronRight } from "lucide-react";
 import { getAppBySlug, rummyApps } from "@/data/rummyApps";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import AppCard from "@/components/AppCard";
+import { lazy, Suspense } from "react";
+
+const Header = lazy(() => import("@/components/Header"));
+const Footer = lazy(() => import("@/components/Footer"));
+const AppCard = lazy(() => import("@/components/AppCard"));
 import SEO, { SITE_URL } from "@/components/SEO";
 
 /** Convert "1.2M" / "980K" to a numeric ratingCount for schema.org */
@@ -94,6 +96,9 @@ const AppDetail = () => {
         description={`${app.name}: ${app.tagline}. Welcome bonus ${app.maxBonus}, min withdrawal ${app.minWithdraw}. Read our full review with pros, cons, payment methods and more.`}
         path={path}
         type="product"
+        ////added forr for better seo
+        keywords={`${app.name} review, ${app.name} bonus, ${app.name} download, ${app.name} app india, play ${app.name}, ${app.name} real cash rummy`}
+
         jsonLd={[productJsonLd, breadcrumbJsonLd]}
       />
       <Header />

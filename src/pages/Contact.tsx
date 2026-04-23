@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { lazy, Suspense } from "react";
+
 import { Mail, MapPin, Phone, Send, MessageCircle, Clock } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+////////lazy loading
+const Header = lazy(() => import("@/components/Header"));
+const Footer = lazy(() => import("@/components/Footer"));
 import SEO from "@/components/SEO";
 
 const contactJsonLd = {
@@ -23,12 +26,15 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+   
       <SEO
-        title="Contact RummyHub — Get in Touch"
-        description="Have questions or want to list your rummy app? Reach the RummyHub team via email, phone, WhatsApp, or our contact form."
-        path="/contact"
-        jsonLd={contactJsonLd}
-      />
+          title="Contact RummyHub — Support, App Listing & Help"
+          description="Contact RummyHub for support, app listing, partnerships, or queries. Reach us via email, phone, or contact form. Fast response within 24 hours."
+          path="/contact"
+          jsonLd={contactJsonLd}
+          keywords="contact rummyhub, rummy support india, rummy app listing, rummy help, contact rummy website, rummyhub email support"
+          type="website"
+/>
       <Header />
 
       <section className="bg-gradient-hero py-16 md:py-20">
