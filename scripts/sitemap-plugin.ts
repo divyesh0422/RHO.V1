@@ -6,18 +6,18 @@ const SITE_URL = "https://rummyhub.in";
 interface Route {
   path: string;
   changefreq: "daily" | "weekly" | "monthly" | "yearly";
-  priority: number;
+  priority: number; 
 }
 
-const staticRoutes: Route[] = [
-  { path: "/", changefreq: "daily", priority: 1.0 },
+const staticRoutes: Route[] = [ 
+  { path: "/", changefreq: "daily", priority: 1.0 }, 
   { path: "/about", changefreq: "monthly", priority: 0.6 },
   { path: "/blog", changefreq: "weekly", priority: 0.7 },
   { path: "/contact", changefreq: "monthly", priority: 0.5 },
   { path: "/privacy", changefreq: "yearly", priority: 0.3 },
-];
+]; 
 
-const buildSitemap = (): string => {
+const buildSitemap = (): string => { 
   const today = new Date().toISOString().split("T")[0];
 
   const appRoutes: Route[] = rummyApps.map((app) => ({
@@ -66,8 +66,8 @@ export function sitemapPlugin(): Plugin {
   return {
     name: "rummyhub-sitemap",
     apply: "build",
-    generateBundle() {
-      this.emitFile({
+    generateBundle() {  
+      this.emitFile({ 
         type: "asset",
         fileName: "sitemap.xml",
         source: buildSitemap(),

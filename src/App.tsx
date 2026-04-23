@@ -14,6 +14,8 @@ const About = lazy(() => import("./pages/About.tsx"));
 const Contact = lazy(() => import("./pages/Contact.tsx"));
 const Blog = lazy(() => import("./pages/Blog.tsx"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
+const Disclaimer = lazy(() => import("./pages/Disclaimer.tsx"));
+const TermsOfUse = lazy(() => import("./pages/TermsOfUse.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
 const queryClient = new QueryClient();
@@ -34,13 +36,15 @@ const App = () => (
           <SearchProvider>
             <Suspense fallback={<RouteFallback />}>
               <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/app/:slug" element={<AppDetail />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="/" element={<Index />} />
+                <Route path="/app/:slug" element={<AppDetail />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/disclaimer" element={<Disclaimer />} />
+                <Route path="/terms" element={<TermsOfUse />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
