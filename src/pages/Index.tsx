@@ -1,11 +1,13 @@
 import { useState, useMemo } from "react";
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import CategoryTabs from "@/components/CategoryTabs";
-import AppCard from "@/components/AppCard";
-import Footer from "@/components/Footer";
-import FloatingSocial from "@/components/FloatingSocial";
-import WhyChooseUs from "@/components/WhyChooseUs";
+//////lazy loading for better performence 
+import { lazy, Suspense } from "react";
+const Header = lazy(() => import("@/components/Header"));
+const HeroSection = lazy(() => import("@/components/HeroSection"));
+const CategoryTabs = lazy(() => import("@/components/CategoryTabs"));
+const AppCard = lazy(() => import("@/components/AppCard"));
+const Footer = lazy(() => import("@/components/Footer"));
+const FloatingSocial = lazy(() => import("@/components/FloatingSocial"));
+const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 import SEO, { SITE_URL } from "@/components/SEO";
 import { rummyApps } from "@/data/rummyApps";
 import { motion } from "framer-motion";
@@ -42,28 +44,66 @@ const Index = () => {
     });
   }, [activeCategory, debouncedQuery]);
 
-  const itemListJsonLd = useMemo(
-    () => ({
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      itemListElement: rummyApps.map((app, idx) => ({
-        "@type": "ListItem",
-        position: idx + 1,
-        url: `${SITE_URL}/app/${app.slug}`,
-        name: app.name,
-      })),
-    }),
-    [],
-  );
+  
+  const itemListJsonLd = [
+  // 🏢 Organization (Trust signal)
+  ////this is for Who owns the website
+  // What your brand is
+  // What your site does
+  // Your official logo
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "RummyHub",
+    url: SITE_URL,
+    logo: `${SITE_URL}/favicon.ico`,
+    description:
+      "Compare and download India's best rummy apps with verified reviews and real cash bonuses.",
+  },
+
+  // 🌐 Website
+//   This is a website (not just a page)
+// The site name is RummyHub
+// The main URL is your domain
+// The content language is English (India)
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "RummyHub",
+    url: SITE_URL,
+    inLanguage: "en-IN",
+  },
+
+  // 📊 App Listing (your existing one improved)
+  //   It tells Google this page has a list of rummy apps.
+// It shows the order or ranking of each app.
+// It helps your page rank for “best rummy apps.”
+// It makes your page easier for Google to understand.
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: rummyApps.map((app, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      url: `${SITE_URL}/app/${app.slug}`,
+      name: app.name,
+    })),
+  },
+  
+];
 
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title="All Rummy Apps in India 2025 — Reviews, Bonuses & Downloads | RummyHub"
         description="Discover, compare and download India's best rummy apps. Verified reviews, exclusive bonuses up to ₹10,000, instant withdrawals. Trusted by 10M+ players."
+        ///added
+        keywords="rummy apps india, best rummy apps, real cash rummy, online rummy apps india"
+        type="website"
         path="/"
         jsonLd={itemListJsonLd}
       />
+      
       <Header />
       <HeroSection />
       <FloatingSocial />

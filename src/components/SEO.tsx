@@ -10,6 +10,7 @@ export interface SEOProps {
   path?: string;
   image?: string;
   type?: "website" | "article" | "product";
+  keywords?: string;////added keyword prop for seo
   /** Any number of JSON-LD objects to inject as application/ld+json scripts */
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
