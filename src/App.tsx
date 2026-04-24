@@ -10,6 +10,7 @@ import { SearchProvider } from "./context/SearchContext.tsx";
 
 // Code-split secondary routes to keep initial bundle lean
 const AppDetail = lazy(() => import("./pages/AppDetail.tsx"));
+const BlogDetail = lazy(() => import("./pages/BlogDetail.tsx"));
 const About = lazy(() => import("./pages/About.tsx"));
 const Contact = lazy(() => import("./pages/Contact.tsx"));
 const Blog = lazy(() => import("./pages/Blog.tsx"));
@@ -41,6 +42,7 @@ const App = () => (
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogDetail />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/disclaimer" element={<Disclaimer />} />
                 <Route path="/terms" element={<TermsOfUse />} />

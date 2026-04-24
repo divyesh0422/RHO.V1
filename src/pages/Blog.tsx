@@ -8,15 +8,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 // import Header from "@/components/Header";
 // import Footer from "@/components/Footer";
 import SEO, { SITE_URL } from "@/components/SEO";
-
-const blogPosts = [
-  { id: 1, slug: "top-10-rummy-strategies", title: "Top 10 Rummy Strategies to Win Big in 2025", excerpt: "Master these proven strategies used by professional rummy players to increase your win rate and maximize your earnings at the cash tables.", category: "Strategy", date: "Apr 10, 2025", readTime: "8 min", color: "from-amber-500 to-orange-500" },
-  { id: 2, slug: "beginners-guide-rummy", title: "Complete Beginner's Guide to Online Rummy", excerpt: "New to rummy? This comprehensive guide covers everything from basic rules to advanced tips that will help you get started and start winning.", category: "Guide", date: "Apr 8, 2025", readTime: "12 min", color: "from-blue-500 to-indigo-500" },
-  { id: 3, slug: "rummy-vs-poker", title: "Rummy vs Poker: Which Game is Better for You?", excerpt: "A detailed comparison of India's two most popular card games. Understand the key differences in skill, strategy, and earning potential.", category: "Comparison", date: "Apr 5, 2025", readTime: "6 min", color: "from-emerald-500 to-teal-500" },
-  { id: 4, slug: "best-rummy-bonuses-april", title: "Best Rummy App Bonuses This April 2025", excerpt: "We've compiled the latest and most generous welcome bonuses from top rummy apps. Don't miss these limited-time offers!", category: "Offers", date: "Apr 1, 2025", readTime: "5 min", color: "from-rose-500 to-pink-500" },
-  { id: 5, slug: "responsible-gaming-tips", title: "5 Responsible Gaming Tips Every Player Should Know", excerpt: "Playing rummy should be fun and safe. Learn how to set limits, manage your bankroll, and enjoy the game responsibly.", category: "Safety", date: "Mar 28, 2025", readTime: "4 min", color: "from-violet-500 to-purple-500" },
-  { id: 6, slug: "rummy-legality-india", title: "Is Online Rummy Legal in India? Complete Guide 2025", excerpt: "Understanding the legal landscape of online rummy in India. Which states allow it, court rulings, and what players need to know.", category: "Legal", date: "Mar 25, 2025", readTime: "10 min", color: "from-sky-500 to-cyan-500" },
-];
+import { blogPosts } from "@/api/blog";
 
 const Blog = () => {
  

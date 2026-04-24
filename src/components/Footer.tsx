@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Gamepad2, MessageCircle, Send, Play, Camera, AtSign } from "lucide-react";
 
 const footerSocials = [
@@ -9,9 +10,33 @@ const footerSocials = [
 ];
 
 const footerLinks = [
-  { title: "Quick Links", links: ["Home", "Top Apps", "Cash Games", "New Apps"] },
-  { title: "Resources", links: ["Blog", "How to Play", "Rummy Rules", "FAQs"] },
-  { title: "Legal", links: ["Privacy Policy", "Terms of Use", "Disclaimer", "Contact Us"] },
+  {
+    title: "Quick Links",
+    links: [
+      { label: "Home", to: "/" },
+      { label: "Top Apps", to: "/#apps" },
+      { label: "Cash Games", to: "/#apps" },
+      { label: "New Apps", to: "/#apps" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Blog", to: "/blog" },
+      { label: "How to Play", to: "/blog/beginners-guide-rummy" },
+      { label: "Rummy Rules", to: "/blog/beginners-guide-rummy" },
+      { label: "FAQs", to: "/contact" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", to: "/privacy" },
+      { label: "Terms of Use", to: "/terms" },
+      { label: "Disclaimer", to: "/disclaimer" },
+      { label: "Contact Us", to: "/contact" },
+    ],
+  },
 ];
 
 const Footer = () => (
@@ -52,8 +77,10 @@ const Footer = () => (
             <h4 className="font-heading font-semibold text-primary-foreground text-sm mb-3">{col.title}</h4>
             <ul className="space-y-2">
               {col.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-xs hover:text-primary-foreground transition-colors">{link}</a>
+                <li key={link.label}>
+                  <Link to={link.to} className="text-xs hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -63,6 +90,11 @@ const Footer = () => (
 
       <div className="border-t border-primary-foreground/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-[11px]">© 2025 RummyHub. All rights reserved.</p>
+        <div className="flex items-center gap-4 text-[11px]">
+          <Link to="/privacy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+          <Link to="/terms" className="hover:text-primary-foreground transition-colors">Terms of Use</Link>
+          <Link to="/disclaimer" className="hover:text-primary-foreground transition-colors">Disclaimer</Link>
+        </div>
         <p className="text-[11px] text-center sm:text-right max-w-sm">
           Disclaimer: This site is for informational purposes only. Play responsibly. Must be 18+.
         </p>
