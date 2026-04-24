@@ -188,7 +188,7 @@ const AppDetail = () => {
             {/* Game Types */}
             <motion.section initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="bg-card rounded-2xl border border-border p-6 shadow-card">
               <h2 className="font-heading text-xl font-bold text-foreground flex items-center gap-2 mb-4">
-                <Gamepad className="w-5 h-5 text-primary" /> Available Games
+                <Gamepad className="w-5 h-5 text-primary" /> Games Tag
               </h2>
               <div className="flex flex-wrap gap-2">
                 {app.gameTypes.map((game) => (
