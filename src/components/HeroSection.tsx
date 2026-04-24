@@ -29,8 +29,8 @@ const HeroSection = () => {
                 <Star className="w-3.5 h-3.5 fill-current" /> Trusted by 10M+ Players
               </span>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-5">
-                All Rummy Apps<br />
-                <span className="opacity-80">in India 2025</span>
+                All Poker Games Apps<br />
+                <span className="opacity-80">in India 2026</span>
               </h1>
               <p className="text-primary-foreground/70 text-lg max-w-lg mx-auto lg:mx-0 mb-8">
                 Your guide to 100+ legal & trusted sites for real cash card games and huge bonuses.

@@ -20,7 +20,7 @@ const Header = () => {
           <div className="w-9 h-9 rounded-lg bg-gradient-hero flex items-center justify-center">
             <Gamepad2 className="w-5 h-5 text-primary-foreground" />
           </div>
-          <span className="font-heading font-bold text-xl text-foreground">RummyHub</span>
+          <span className="font-heading font-bold text-xl text-foreground">Realgameapps</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
