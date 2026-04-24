@@ -43,7 +43,7 @@ export const rummyApps: RummyApp[] = [
     cons: ["High competition"],
     paymentMethods: ["UPI", "Paytm", "Bank Transfer", "PhonePe"],
     platforms: ["Android", "iOS", "Web"],
-    gameTypes: ["Points Rummy", "Pool Rummy", "Deals Rummy"],
+    gameTypes: ["Online Rummy", "Card Game", "Skill-based Game"],
     maxBonus: "₹5,000",
     referralBonus: "₹1,000",
     established: "2018",
