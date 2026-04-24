@@ -19,6 +19,9 @@ const Index = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const { query, setQuery } = useSearch();
   const debouncedQuery = useDebounce(query, 250);
+  const [visibleCount, setVisibleCount] = useState(6); // show 6 initially
+  const [isOpen, setIsOpen] = useState(false);
+  
 
   const filteredApps = useMemo(() => {
     const base =
@@ -44,7 +47,9 @@ const Index = () => {
     });
   }, [activeCategory, debouncedQuery]);
 
-  
+  const visibleApps = filteredApps.slice(0, 6);
+const extraApps = filteredApps.slice(6);
+
   const itemListJsonLd = [
   // 🏢 Organization (Trust signal)
   ////this is for Who owns the website
@@ -126,9 +131,9 @@ const Index = () => {
         <div id="apps-grid" className="mt-8">
           {filteredApps.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filteredApps.map((app, i) => (
-                <AppCard key={app.id} app={app} index={i} />
-              ))}
+              {visibleApps.map((app, i) => (
+  <AppCard key={app.id} app={app} index={i} />
+))}
             </div>
           ) : (
             <motion.div
@@ -170,8 +175,42 @@ const Index = () => {
             </motion.div>
           )}
         </div>
-      </main>
+          <div className="flex justify-center mt-10">
+  <div className="flex justify-center mt-10">
+  {extraApps.length > 0 && (
+    <button
+      onClick={() => setIsOpen(true)}
+      className="bg-primary text-primary-foreground py-2 px-8 rounded-lg text-sm font-semibold hover:opacity-90 transition"
+    >
+      Show More
+    </button>
+  )}
+</div>
+</div>
+{isOpen && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+    
+    <div className="bg-background w-[90%] max-w-5xl max-h-[80vh] rounded-2xl p-6 overflow-y-auto relative">
+      
+      {/* Close Button */}
+      <button
+        onClick={() => setIsOpen(false)}
+        className="absolute top-3 right-3 text-sm bg-muted px-3 py-1 rounded"
+      >
+        Close ✕
+      </button>
 
+      <h2 className="text-xl font-bold mb-4">More Apps</h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {extraApps.map((app, i) => (
+          <AppCard key={app.id} app={app} index={i} />
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+      </main>
       <WhyChooseUs />
       <Footer />
     </div>
