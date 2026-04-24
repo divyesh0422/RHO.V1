@@ -11,7 +11,7 @@ const sections = [
     icon: Info,
     title: "1. General Information Only",
     content: [
-      "RummyHub publishes content for general informational and entertainment purposes only.",
+      "Realgameapps publishes content for general informational and entertainment purposes only.",
       "Nothing on this website constitutes legal, financial, tax, or gambling advice of any kind.",
       "App reviews, ratings, bonus comparisons, and strategy articles reflect our editorial opinion based on testing and publicly available information.",
       "Users should exercise independent judgement and consult qualified professionals before making financial or legal decisions related to real-money gaming.",
@@ -21,8 +21,8 @@ const sections = [
     icon: TrendingDown,
     title: "2. No Guarantee of Winnings",
     content: [
-      "RummyHub does not guarantee any winnings, profits, or positive outcomes from using any app listed or reviewed on our platform.",
-      "Real-money rummy involves financial risk. Outcomes depend on skill, experience, and elements of chance.",
+      "Realgameapps does not guarantee any winnings, profits, or positive outcomes from using any app listed or reviewed on our platform.",
+      "Real-money Realgameappsinvolves financial risk. Outcomes depend on skill, experience, and elements of chance.",
       "Past performance of any app, player, or strategy is not indicative of future results.",
       "Any earnings figures or bonus amounts mentioned are illustrative and subject to change by the respective platforms without notice.",
     ],
@@ -31,28 +31,28 @@ const sections = [
     icon: UserX,
     title: "3. Age Restriction — 18+ Only",
     content: [
-      "All real-money rummy games are strictly for adults aged 18 years and above.",
+      "All real-money Realgameappsgames are strictly for adults aged 18 years and above.",
       "By accessing the real-money gaming content on this site, you confirm that you are at least 18 years old.",
-      "RummyHub strongly discourages access or participation by minors.",
-      "If you believe a minor is accessing this content, please contact us immediately at support@rummyhub.in.",
+      "Realgameapps strongly discourages access or participation by minors.",
+      "If you believe a minor is accessing this content, please contact us immediately at support@Realgameapps.in.",
     ],
   },
   {
     icon: MapPin,
     title: "4. Geographical & Jurisdictional Restrictions",
     content: [
-      "Real-money online rummy is restricted or prohibited in certain Indian states and territories.",
+      "Real-money online Realgameappsis restricted or prohibited in certain Indian states and territories.",
       "Currently restricted states include: Andhra Pradesh, Telangana, Assam, Odisha, and certain union territories.",
       "States with specific licensing requirements include: Nagaland and Sikkim.",
-      "It is solely your responsibility to verify whether online rummy is lawful in your state or jurisdiction before registering or depositing on any platform.",
-      "RummyHub accepts no liability for users who access real-money platforms from restricted regions.",
+      "It is solely your responsibility to verify whether online Realgameappsis lawful in your state or jurisdiction before registering or depositing on any platform.",
+      "Realgameapps accepts no liability for users who access real-money platforms from restricted regions.",
     ],
   },
   {
     icon: Link2,
     title: "5. Third-Party Apps & Brand Disclaimer",
     content: [
-      "RummyHub reviews and links to third-party rummy applications. We are an independent review website and are not affiliated with, owned by, or officially endorsed by any of the apps we review.",
+      "Realgameapps reviews and links to third-party Realgameappslications. We are an independent review website and are not affiliated with, owned by, or officially endorsed by any of the apps we review.",
       "All brand names, trademarks, logos, and registered marks belong to their respective owners and are used on this site for informational and identification purposes only.",
       "Inclusion of an app on our site does not constitute a partnership, sponsorship, or endorsement unless explicitly stated.",
       "We are not responsible for the practices, policies, content, or services of any third-party platform.",
@@ -62,19 +62,19 @@ const sections = [
     icon: Heart,
     title: "6. Responsible Gaming",
     content: [
-      "RummyHub strongly encourages responsible gaming at all times.",
+      "Realgameapps strongly encourages responsible gaming at all times.",
       "Set strict budget and time limits before each session — never play with money you cannot afford to lose.",
       "Do not chase losses. Accept variance as part of real-money gaming.",
       "If you or someone you know is struggling with gaming addiction, please seek help from a qualified professional.",
-      "Most licensed rummy platforms in India offer self-exclusion, deposit limits, and cooling-off features. Use them if needed.",
+      "Most licensed Realgameappsplatforms in India offer self-exclusion, deposit limits, and cooling-off features. Use them if needed.",
     ],
   },
   {
     icon: CheckCircle,
     title: "7. Accuracy of Information",
     content: [
-      "We strive to keep all content accurate, complete, and up to date. However, rummy platforms frequently change their bonus offers, app features, and terms.",
-      "RummyHub makes no warranties regarding the completeness, reliability, or current accuracy of any specific data point on this site.",
+      "We strive to keep all content accurate, complete, and up to date. However, Realgameappsplatforms frequently change their bonus offers, app features, and terms.",
+      "Realgameapps makes no warranties regarding the completeness, reliability, or current accuracy of any specific data point on this site.",
       "Bonus amounts, download links, rating scores, and promotional details should be verified directly with the relevant app provider before acting on them.",
       "We are not liable for decisions made based on outdated or inaccurate information published on this website.",
     ],
@@ -83,9 +83,9 @@ const sections = [
     icon: Scale,
     title: "8. Limitation of Liability",
     content: [
-      "RummyHub, its owners, editors, contributors, and affiliates shall not be held liable for:",
+      "Realgameapps, its owners, editors, contributors, and affiliates shall not be held liable for:",
       "Direct, indirect, incidental, consequential, or punitive damages of any kind arising from your use of this website.",
-      "Financial losses, winnings disputes, or account issues incurred on any third-party rummy platform.",
+      "Financial losses, winnings disputes, or account issues incurred on any third-party Realgameappsplatform.",
       "Technical failures, data loss, or inaccessibility of any app or service linked from this site.",
       "Reliance on any information, rating, bonus data, or strategy content published here.",
       "This limitation applies to the fullest extent permitted under applicable Indian law.",
@@ -98,9 +98,9 @@ const Disclaimer = () => {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "Disclaimer | RummyHub",
+      name: "Disclaimer | Realgameapps",
       url: `${SITE_URL}/disclaimer`,
-      description: "Read the RummyHub disclaimer. Informational use only. No guarantee of winnings. 18+ only. Check local laws.",
+      description: "Read the Realgameapps disclaimer. Informational use only. No guarantee of winnings. 18+ only. Check local laws.",
     },
     {
       "@context": "https://schema.org",
@@ -115,9 +115,9 @@ const Disclaimer = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Disclaimer | RummyHub"
-        description="Read the disclaimer for RummyHub. This site is for informational purposes only. We do not promote gambling or guarantee winnings. 18+ only."
-        keywords="rummyhub disclaimer, rummy website disclaimer, informational purposes only rummy, responsible gaming india, 18+ rummy disclaimer"
+        title="Disclaimer | Realgameapps"
+        description="Read the disclaimer for Realgameapps. This site is for informational purposes only. We do not promote gambling or guarantee winnings. 18+ only."
+        keywords="Realgameapps disclaimer, Realgameappswebsite disclaimer, informational purposes only rummy, responsible gaming india, 18+ Realgameappsdisclaimer"
         type="article"
         path="/disclaimer"
         jsonLd={jsonLd}
@@ -147,7 +147,7 @@ const Disclaimer = () => {
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="bg-amber-500/8 border border-amber-500/25 rounded-2xl p-6 mb-8 flex gap-4">
           <AlertTriangle className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">Important:</strong> RummyHub is an independent review and comparison website. We do not operate any rummy platform, process payments, or guarantee any gaming outcomes. All real-money gaming carries financial risk. Play responsibly. <strong className="text-foreground">18+ only.</strong>
+            <strong className="text-foreground">Important:</strong> Realgameapps is an independent review and comparison website. We do not operate any Realgameappsplatform, process payments, or guarantee any gaming outcomes. All real-money gaming carries financial risk. Play responsibly. <strong className="text-foreground">18+ only.</strong>
           </p>
         </motion.div>
 
@@ -196,7 +196,7 @@ const Disclaimer = () => {
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">Terms of Use</p>
-              <p className="text-xs text-muted-foreground">Rules for using RummyHub</p>
+              <p className="text-xs text-muted-foreground">Rules for using Realgameapps</p>
             </div>
             <ChevronRight className="w-4 h-4 text-muted-foreground ml-auto" />
           </Link>

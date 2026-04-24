@@ -11,11 +11,11 @@ const sections = [
     icon: Eye,
     title: "Information We Collect",
     content: [
-      "When you browse RummyHub, we may collect the following categories of data:",
+      "When you browse Realgameapps, we may collect the following categories of data:",
       "Personal identifiers: name and email address if you contact us or subscribe to updates.",
       "Device & technical data: IP address, browser type, operating system, and screen resolution.",
       "Usage data: pages visited, time spent per page, scroll depth, clicks, and referral source.",
-      "We never collect payment information — all transactions happen directly on third-party rummy platforms.",
+      "We never collect payment information — all transactions happen directly on third-party Realgameappsplatforms.",
     ],
   },
   {
@@ -34,7 +34,7 @@ const sections = [
     icon: Cookie,
     title: "Cookies & Tracking Technologies",
     content: [
-      "RummyHub uses cookies and similar technologies including local storage and pixel tags.",
+      "Realgameapps uses cookies and similar technologies including local storage and pixel tags.",
       "Essential cookies: required for the site to function (session management, security).",
       "Analytics cookies: Google Analytics 4 to understand aggregate traffic patterns. Data is anonymised and not linked to individuals.",
       "Affiliate cookies: when you click an app referral link, the partner platform may set a cookie to track sign-ups for commission purposes.",
@@ -45,8 +45,8 @@ const sections = [
     icon: Link2,
     title: "Third-Party Links & Affiliate Disclosure",
     content: [
-      "RummyHub links to third-party rummy applications and platforms. We are not responsible for the privacy practices, terms, or content of those external sites.",
-      "Some links on this site are affiliate links. If you click through and register or deposit on a partner platform, RummyHub may earn a referral commission at no additional cost to you.",
+      "Realgameapps links to third-party Realgameappslications and platforms. We are not responsible for the privacy practices, terms, or content of those external sites.",
+      "Some links on this site are affiliate links. If you click through and register or deposit on a partner platform, Realgameapps may earn a referral commission at no additional cost to you.",
       "Our reviews and ratings remain editorially independent. Affiliate relationships do not influence app scores or recommendations.",
       "We recommend reviewing the privacy policy of any third-party app before creating an account or depositing money.",
     ],
@@ -65,12 +65,12 @@ const sections = [
     icon: UserCheck,
     title: "Your Rights",
     content: [
-      "You have the following rights regarding your personal data held by RummyHub:",
+      "You have the following rights regarding your personal data held by Realgameapps:",
       "Right of access: request a copy of the personal data we hold about you.",
       "Right to rectification: ask us to correct inaccurate or incomplete data.",
       "Right to erasure: request deletion of your personal data where we have no lawful basis to retain it.",
       "Right to withdraw consent: if processing is based on consent (e.g., newsletter), you may unsubscribe at any time.",
-      "To exercise any of these rights, email us at support@rummyhub.in. We will respond within 30 days.",
+      "To exercise any of these rights, email us at support@Realgameapps.in. We will respond within 30 days.",
     ],
   },
   {
@@ -78,8 +78,8 @@ const sections = [
     title: "Contact & Updates",
     content: [
       "If you have questions, concerns, or complaints about this Privacy Policy, please contact our team:",
-      "Email: support@rummyhub.in",
-      "Contact page: rummyhub.in/contact",
+      "Email: support@Realgameapps.in",
+      "Contact page: Realgameapps.in/contact",
       "We reserve the right to update this policy at any time. Material changes will be highlighted on our homepage and the 'Last updated' date at the top of this page will be revised. Continued use of the site after changes constitutes acceptance of the updated policy.",
     ],
   },
@@ -90,9 +90,9 @@ const PrivacyPolicy = () => {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "Privacy Policy | RummyHub",
+      name: "Privacy Policy | Realgameapps",
       url: `${SITE_URL}/privacy`,
-      description: "Read how RummyHub collects, uses and protects your personal information.",
+      description: "Read how Realgameapps collects, uses and protects your personal information.",
     },
     {
       "@context": "https://schema.org",
@@ -107,9 +107,9 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Privacy Policy | RummyHub"
-        description="Read how RummyHub collects, uses and protects your personal information when you browse our rummy app reviews and comparisons."
-        keywords="privacy policy rummyhub, user data protection india, rummy website privacy, cookies policy india, online privacy policy"
+        title="Privacy Policy | Realgameapps"
+        description="Read how Realgameapps collects, uses and protects your personal information when you browse our Realgameapps reviews and comparisons."
+        keywords="privacy policy Realgameapps, user data protection india, Realgameappswebsite privacy, cookies policy india, online privacy policy"
         type="article"
         path="/privacy"
         jsonLd={jsonLd}
@@ -138,7 +138,7 @@ const PrivacyPolicy = () => {
       <main className="container py-12 max-w-3xl">
         {/* Intro card */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-8 text-sm text-muted-foreground leading-relaxed">
-          Your privacy matters to us. This policy explains what data RummyHub collects when you visit <strong className="text-foreground">rummyhub.in</strong>, how we use it, and the rights you have over it. Please read it carefully.
+          Your privacy matters to us. This policy explains what data Realgameapps collects when you visit <strong className="text-foreground">Realgameapps.in</strong>, how we use it, and the rights you have over it. Please read it carefully.
         </motion.div>
 
         {/* Sections */}
@@ -177,7 +177,7 @@ const PrivacyPolicy = () => {
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">Terms of Use</p>
-              <p className="text-xs text-muted-foreground">Rules for using RummyHub</p>
+              <p className="text-xs text-muted-foreground">Rules for using Realgameapps</p>
             </div>
             <ChevronRight className="w-4 h-4 text-muted-foreground ml-auto" />
           </Link>

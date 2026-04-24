@@ -26,8 +26,8 @@ const AppDetail = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <SEO
-          title="App Not Found | RummyHub"
-          description="We couldn't find that rummy app. Browse all verified rummy apps on RummyHub."
+          title="App Not Found | Realgameapps"
+          description="We couldn't find that Realgameapps. Browse all verified Realgameappss on Realgameapps."
           path={`/app/${slug ?? ""}`}
           noindex
         />
@@ -72,7 +72,7 @@ const AppDetail = () => {
         ratingValue: app.rating,
         bestRating: 5,
       },
-      author: { "@type": "Organization", name: "RummyHub Editorial" },
+      author: { "@type": "Organization", name: "Realgameapps Editorial" },
       reviewBody: app.description,
       positiveNotes: { "@type": "ItemList", itemListElement: app.pros.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p })) },
       negativeNotes: { "@type": "ItemList", itemListElement: app.cons.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c })) },
@@ -92,7 +92,7 @@ const AppDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${app.name} Review ${app.established ? "" : ""}— Bonus ${app.maxBonus}, Rating ${app.rating}/5 | RummyHub`}
+        title={`${app.name} Review ${app.established ? "" : ""}— Bonus ${app.maxBonus}, Rating ${app.rating}/5 | Realgameapps`}
         description={`${app.name}: ${app.tagline}. Welcome bonus ${app.maxBonus}, min withdrawal ${app.minWithdraw}. Read our full review with pros, cons, payment methods and more.`}
         path={path}
         type="product"

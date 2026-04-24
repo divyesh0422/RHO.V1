@@ -54,30 +54,30 @@ const Index = () => {
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "RummyHub",
+    name: "Realgameapps",
     url: SITE_URL,
     logo: `${SITE_URL}/favicon.ico`,
     description:
-      "Compare and download India's best rummy apps with verified reviews and real cash bonuses.",
+      "Compare and download India's best Realgameappss with verified reviews and real cash bonuses.",
   },
 
   // 🌐 Website
 //   This is a website (not just a page)
-// The site name is RummyHub
+// The site name is Realgameapps
 // The main URL is your domain
 // The content language is English (India)
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "RummyHub",
+    name: "Realgameapps",
     url: SITE_URL,
     inLanguage: "en-IN",
   },
 
   // 📊 App Listing (your existing one improved)
-  //   It tells Google this page has a list of rummy apps.
+  //   It tells Google this page has a list of Realgameappss.
 // It shows the order or ranking of each app.
-// It helps your page rank for “best rummy apps.”
+// It helps your page rank for “best Realgameappss.”
 // It makes your page easier for Google to understand.
   {
     "@context": "https://schema.org",
@@ -95,10 +95,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="All Rummy Apps in India 2025 — Reviews, Bonuses & Downloads | RummyHub"
-        description="Discover, compare and download India's best rummy apps. Verified reviews, exclusive bonuses up to ₹10,000, instant withdrawals. Trusted by 10M+ players."
+        title="All Realgameappss in India 2025 — Reviews, Bonuses & Downloads | Realgameapps"
+        description="Discover, compare and download India's best Realgameappss. Verified reviews, exclusive bonuses up to ₹10,000, instant withdrawals. Trusted by 10M+ players."
         ///added
-        keywords="rummy apps india, best rummy apps, real cash rummy, online rummy apps india"
+        keywords="Realgameappss india, best Realgameappss, real cash rummy, online Realgameappss india"
         type="website"
         path="/"
         jsonLd={itemListJsonLd}
@@ -115,7 +115,7 @@ const Index = () => {
           className="flex items-center gap-2 mb-8"
         >
           <TrendingUp className="w-5 h-5 text-secondary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">All Rummy Apps in India</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">All Realgameappss in India</h2>
           <span className="ml-auto px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs font-semibold">
             {filteredApps.length} Apps
           </span>
@@ -144,7 +144,7 @@ const Index = () => {
               </h3>
               <p className="text-muted-foreground text-sm max-w-md mb-5">
                 {query
-                  ? <>We couldn't find any rummy apps matching <span className="font-semibold text-foreground">"{query}"</span>. Try a different keyword or clear your filters.</>
+                  ? <>We couldn't find any Realgameappss matching <span className="font-semibold text-foreground">"{query}"</span>. Try a different keyword or clear your filters.</>
                   : "No apps found for the selected category."}
               </p>
               <div className="flex gap-3">

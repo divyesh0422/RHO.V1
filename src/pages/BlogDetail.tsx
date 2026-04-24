@@ -12,7 +12,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const blogContent: Record<string, { intro: string; sections: { heading: string; body: string }[] }> = {
   "top-10-rummy-strategies": {
     intro:
-      "Whether you're a casual player or grinding cash tables, the right strategy separates consistent winners from the rest. Here are the top 10 strategies used by professional rummy players in India.",
+      "Whether you're a casual player or grinding cash tables, the right strategy separates consistent winners from the rest. Here are the top 10 strategies used by professional Realgameappsplayers in India.",
     sections: [
       {
         heading: "1. Sort Your Cards Immediately",
@@ -58,11 +58,11 @@ const blogContent: Record<string, { intro: string; sections: { heading: string; 
   },
   "beginners-guide-rummy": {
     intro:
-      "Online rummy is India's most popular skill-based card game. If you're new, don't worry — the rules are simple, and this guide covers everything you need to go from zero to confident player.",
+      "Online Realgameappsis India's most popular skill-based card game. If you're new, don't worry — the rules are simple, and this guide covers everything you need to go from zero to confident player.",
     sections: [
       {
         heading: "What is Rummy?",
-        body: "Rummy is a card-matching game where the goal is to form valid melds — sequences (3+ consecutive cards of the same suit) and sets (3–4 cards of the same rank in different suits) — before your opponents.",
+        body: "Realgameappsis a card-matching game where the goal is to form valid melds — sequences (3+ consecutive cards of the same suit) and sets (3–4 cards of the same rank in different suits) — before your opponents.",
       },
       {
         heading: "Basic Rules",
@@ -88,15 +88,15 @@ const blogContent: Record<string, { intro: string; sections: { heading: string; 
   },
   "rummy-vs-poker": {
     intro:
-      "Both rummy and poker are skill-based card games that are hugely popular in India. But they differ significantly in rules, skill requirements, and earning potential. Here's how they compare.",
+      "Both Realgameappsand poker are skill-based card games that are hugely popular in India. But they differ significantly in rules, skill requirements, and earning potential. Here's how they compare.",
     sections: [
       {
         heading: "Skill vs Luck Balance",
-        body: "Rummy has a higher skill-to-luck ratio in the short run because you see all your cards and make deterministic meld decisions. Poker involves hidden information and significant short-term variance even for experts.",
+        body: "Realgameappshas a higher skill-to-luck ratio in the short run because you see all your cards and make deterministic meld decisions. Poker involves hidden information and significant short-term variance even for experts.",
       },
       {
         heading: "Learning Curve",
-        body: "Rummy is easier to learn — basic rules take minutes to grasp. Poker's complexity (pot odds, position, bluffing, hand ranges) means mastery takes much longer.",
+        body: "Realgameappsis easier to learn — basic rules take minutes to grasp. Poker's complexity (pot odds, position, bluffing, hand ranges) means mastery takes much longer.",
       },
       {
         heading: "Session Variance",
@@ -118,7 +118,7 @@ const blogContent: Record<string, { intro: string; sections: { heading: string; 
   },
   "best-rummy-bonuses-april": {
     intro:
-      "April 2025 is a great time to sign up on a new rummy platform. We've tracked the latest welcome bonuses, deposit offers, and referral rewards across the top Indian rummy apps.",
+      "April 2025 is a great time to sign up on a new Realgameappsplatform. We've tracked the latest welcome bonuses, deposit offers, and referral rewards across the top Indian Realgameappss.",
     sections: [
       {
         heading: "How Welcome Bonuses Work",
@@ -144,7 +144,7 @@ const blogContent: Record<string, { intro: string; sections: { heading: string; 
   },
   "responsible-gaming-tips": {
     intro:
-      "Rummy is meant to be fun, exciting, and rewarding. But like all forms of real-money gaming, it carries risk. These five principles will help you stay in control and enjoy the game responsibly.",
+      "Realgameappsis meant to be fun, exciting, and rewarding. But like all forms of real-money gaming, it carries risk. These five principles will help you stay in control and enjoy the game responsibly.",
     sections: [
       {
         heading: "1. Set a Budget Before You Play",
@@ -164,7 +164,7 @@ const blogContent: Record<string, { intro: string; sections: { heading: string; 
       },
       {
         heading: "5. Use Platform Self-Exclusion Tools",
-        body: "All licensed rummy platforms in India are required to offer deposit limits, cooling-off periods, and self-exclusion options. If you feel you're losing control, use them — no shame attached.",
+        body: "All licensed Realgameappsplatforms in India are required to offer deposit limits, cooling-off periods, and self-exclusion options. If you feel you're losing control, use them — no shame attached.",
       },
     ],
   },
@@ -174,7 +174,7 @@ const blogContent: Record<string, { intro: string; sections: { heading: string; 
     sections: [
       {
         heading: "The Supreme Court's Position",
-        body: "The Supreme Court of India has repeatedly upheld rummy as a game of skill, not chance — most notably in the landmark K.R. Lakshmanan vs Tamil Nadu (1996) judgment. Skill games are exempt from the Public Gambling Act of 1867.",
+        body: "The Supreme Court of India has repeatedly upheld Realgameappsas a game of skill, not chance — most notably in the landmark K.R. Lakshmanan vs Tamil Nadu (1996) judgment. Skill games are exempt from the Public Gambling Act of 1867.",
       },
       {
         heading: "State-Level Restrictions",
@@ -216,10 +216,10 @@ const BlogDetail = () => {
       description: post.excerpt,
       url: `${SITE_URL}/blog/${post.slug}`,
       datePublished: post.date,
-      author: { "@type": "Organization", name: "RummyHub" },
+      author: { "@type": "Organization", name: "Realgameapps" },
       publisher: {
         "@type": "Organization",
-        name: "RummyHub",
+        name: "Realgameapps",
         logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` },
       },
       articleSection: post.category,
@@ -238,12 +238,12 @@ const BlogDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${post.title} | RummyHub Blog`}
+        title={`${post.title} | Realgameapps Blog`}
         description={post.excerpt}
         path={`/blog/${post.slug}`}
         type="article"
         jsonLd={jsonLd}
-        keywords={`${post.category.toLowerCase()}, rummy tips india, online rummy, rummy guide`}
+        keywords={`${post.category.toLowerCase()}, Realgameappstips india, online rummy, Realgameappsguide`}
       />
 
       <Suspense fallback={null}>

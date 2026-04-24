@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://rummyhub.in";
+const SITE_URL = "https://Realgameapps.in";
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 export interface SEOProps {

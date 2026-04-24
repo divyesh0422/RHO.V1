@@ -11,7 +11,7 @@ const sections = [
     icon: CheckSquare,
     title: "1. Acceptance of Terms",
     content: [
-      "By accessing or using rummyhub.in you agree to be bound by these Terms of Use.",
+      "By accessing or using Realgameapps.in you agree to be bound by these Terms of Use.",
       "If you do not agree with any part of these terms, you must immediately stop using this website.",
       "These terms apply to all visitors, registered users, and anyone who accesses or uses our services.",
       "We may revise these terms at any time. Continued use after a revision constitutes acceptance of the updated terms.",
@@ -21,7 +21,7 @@ const sections = [
     icon: FileText,
     title: "2. Use of Content",
     content: [
-      "All content on RummyHub — text, graphics, logos, images, app reviews, rankings, and data — is the intellectual property of RummyHub or its licensors.",
+      "All content on Realgameapps — text, graphics, logos, images, app reviews, rankings, and data — is the intellectual property of Realgameapps or its licensors.",
       "You may read and share links to our content for personal, non-commercial purposes.",
       "You may not reproduce, republish, distribute, scrape, or create derivative works from our content without prior written permission.",
       "Unauthorised use may result in legal action under Indian intellectual property laws.",
@@ -31,11 +31,11 @@ const sections = [
     icon: Ban,
     title: "3. Prohibited Conduct",
     content: [
-      "The following activities are strictly prohibited on RummyHub:",
+      "The following activities are strictly prohibited on Realgameapps:",
       "Using the site for any unlawful purpose or in violation of applicable Indian laws.",
       "Attempting to gain unauthorised access to our servers, databases, or other systems.",
       "Uploading or transmitting malicious code, viruses, or disruptive data.",
-      "Impersonating any person, entity, or RummyHub staff member.",
+      "Impersonating any person, entity, or Realgameapps staff member.",
       "Using automated tools (bots, scrapers, crawlers) to harvest content without permission.",
       "Engaging in any activity that degrades site performance or interferes with other users.",
     ],
@@ -44,7 +44,7 @@ const sections = [
     icon: Users,
     title: "4. Eligibility",
     content: [
-      "RummyHub is intended solely for users who are 18 years of age or older.",
+      "Realgameapps is intended solely for users who are 18 years of age or older.",
       "By using this site, you represent that you are at least 18 years old and legally permitted to access real-money gaming content in your jurisdiction.",
       "It is your responsibility to determine whether accessing this content is lawful in your state or territory.",
       "We reserve the right to terminate access for any user who we believe does not meet these eligibility requirements.",
@@ -54,9 +54,9 @@ const sections = [
     icon: Link2,
     title: "5. Third-Party Links",
     content: [
-      "RummyHub contains links to external rummy applications and websites provided for your convenience.",
+      "Realgameapps contains links to external Realgameappslications and websites provided for your convenience.",
       "We have no control over the content, privacy practices, or terms of those third-party platforms.",
-      "A link from RummyHub does not constitute an endorsement or warranty of that platform's safety, security, or reliability.",
+      "A link from Realgameapps does not constitute an endorsement or warranty of that platform's safety, security, or reliability.",
       "We accept no responsibility for any loss or damage arising from your use of linked third-party services.",
       "Always review a platform's own terms and privacy policy before registering or depositing.",
     ],
@@ -65,7 +65,7 @@ const sections = [
     icon: DollarSign,
     title: "6. Affiliate Disclosure",
     content: [
-      "Some links on RummyHub are affiliate links. When you click these and complete a qualifying action (such as registering or depositing), RummyHub may receive a referral commission.",
+      "Some links on Realgameapps are affiliate links. When you click these and complete a qualifying action (such as registering or depositing), Realgameapps may receive a referral commission.",
       "This commission is paid by the partner platform — you pay nothing extra.",
       "Affiliate relationships do not influence our editorial ratings, rankings, or reviews. Our assessments are independent and based on actual testing criteria.",
       "We disclose all material connections with third parties in compliance with applicable advertising standards.",
@@ -76,7 +76,7 @@ const sections = [
     title: "7. Disclaimer of Warranties",
     content: [
       "This website and all content are provided on an 'as is' and 'as available' basis without warranties of any kind.",
-      "RummyHub expressly disclaims all warranties, whether express, implied, statutory, or otherwise, including warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+      "Realgameapps expressly disclaims all warranties, whether express, implied, statutory, or otherwise, including warranties of merchantability, fitness for a particular purpose, and non-infringement.",
       "We do not warrant that the site will be uninterrupted, error-free, or free of viruses or harmful components.",
       "App ratings, bonus amounts, and other data may change without notice. Always verify details directly with the respective app provider.",
     ],
@@ -85,10 +85,10 @@ const sections = [
     icon: Scale,
     title: "8. Limitation of Liability",
     content: [
-      "To the fullest extent permitted by Indian law, RummyHub and its owners, editors, and contributors shall not be liable for:",
+      "To the fullest extent permitted by Indian law, Realgameapps and its owners, editors, and contributors shall not be liable for:",
       "Any direct, indirect, incidental, consequential, or punitive damages arising from your use of this site.",
-      "Losses arising from reliance on any information, rating, or recommendation published on RummyHub.",
-      "Any financial loss incurred while playing on third-party rummy platforms linked from this site.",
+      "Losses arising from reliance on any information, rating, or recommendation published on Realgameapps.",
+      "Any financial loss incurred while playing on third-party Realgameappsplatforms linked from this site.",
       "Technical failures, data loss, or service interruptions.",
     ],
   },
@@ -105,7 +105,7 @@ const sections = [
     icon: RefreshCw,
     title: "10. Changes to These Terms",
     content: [
-      "RummyHub reserves the right to modify these Terms of Use at any time without prior notice.",
+      "Realgameapps reserves the right to modify these Terms of Use at any time without prior notice.",
       "Changes become effective immediately upon posting to this page.",
       "The 'Last updated' date at the top of this page will reflect the most recent revision.",
       "Your continued use of the website after any changes constitutes your acceptance of the new terms.",
@@ -116,8 +116,8 @@ const sections = [
     title: "11. Contact Us",
     content: [
       "If you have questions or concerns about these Terms of Use, please reach out to us:",
-      "Email: support@rummyhub.in",
-      "Contact page: rummyhub.in/contact",
+      "Email: support@Realgameapps.in",
+      "Contact page: Realgameapps.in/contact",
       "We aim to respond to all enquiries within 3 business days.",
     ],
   },
@@ -128,9 +128,9 @@ const TermsOfUse = () => {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "Terms of Use | RummyHub",
+      name: "Terms of Use | Realgameapps",
       url: `${SITE_URL}/terms`,
-      description: "Review the Terms of Use for RummyHub. Governs your access to and use of our content and services.",
+      description: "Review the Terms of Use for Realgameapps. Governs your access to and use of our content and services.",
     },
     {
       "@context": "https://schema.org",
@@ -145,9 +145,9 @@ const TermsOfUse = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Terms of Use | RummyHub"
-        description="Review the Terms of Use for RummyHub. By accessing our website you agree to these terms governing the use of our content and services."
-        keywords="terms of use rummyhub, rummyhub terms conditions, website terms india, rummy site terms, user agreement rummyhub"
+        title="Terms of Use | Realgameapps"
+        description="Review the Terms of Use for Realgameapps. By accessing our website you agree to these terms governing the use of our content and services."
+        keywords="terms of use Realgameapps, Realgameapps terms conditions, website terms india, Realgameappssite terms, user agreement Realgameapps"
         type="article"
         path="/terms"
         jsonLd={jsonLd}
@@ -175,7 +175,7 @@ const TermsOfUse = () => {
       <main className="container py-12 max-w-3xl">
         {/* Intro */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="bg-blue-500/5 border border-blue-500/20 rounded-2xl p-6 mb-8 text-sm text-muted-foreground leading-relaxed">
-          Please read these Terms of Use carefully before using <strong className="text-foreground">rummyhub.in</strong>. By accessing or using this website, you confirm that you have read, understood, and agree to be bound by these terms.
+          Please read these Terms of Use carefully before using <strong className="text-foreground">Realgameapps.in</strong>. By accessing or using this website, you confirm that you have read, understood, and agree to be bound by these terms.
         </motion.div>
 
         <div className="space-y-6">

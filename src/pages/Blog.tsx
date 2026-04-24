@@ -16,10 +16,10 @@ const Blog = () => {
       {
         "@context": "https://schema.org",
         "@type": "Blog",
-        name: "RummyHub Blog",
+        name: "Realgameapps Blog",
         url: `${SITE_URL}/blog`,
         description:
-          "Latest articles on rummy strategies, tips, app reviews, and bonus offers in India.",
+          "Latest articles on Realgameappsstrategies, tips, app reviews, and bonus offers in India.",
       },
       {
         "@context": "https://schema.org",
@@ -52,11 +52,11 @@ const Blog = () => {
         datePublished: p.date,
         author: {
           "@type": "Organization",
-          name: "RummyHub",
+          name: "Realgameapps",
         },
         publisher: {
           "@type": "Organization",
-          name: "RummyHub",
+          name: "Realgameapps",
           logo: {
             "@type": "ImageObject",
             url: `${SITE_URL}/favicon.ico`,
@@ -71,11 +71,11 @@ const Blog = () => {
     
       {/* ////////////////added keyword here for better rich */}
       <SEO
-        title="Rummy Blog & Tips — Strategies, Guides & Offers in India | RummyHub"
-        description="Read expert rummy strategies, beginner guides, app reviews, latest bonuses, and legal updates about online rummy in India."
+        title="RealgameappsBlog & Tips — Strategies, Guides & Offers in India | Realgameapps"
+        description="Read expert Realgameappsstrategies, beginner guides, app reviews, latest bonuses, and legal updates about online Realgameappsin India."
         path="/blog"
         jsonLd={blogJsonLd}
-        keywords="rummy blog india, rummy strategies, rummy tips, best rummy apps, online rummy guide, rummy bonuses india, rummy tricks, play rummy online"
+        keywords="Realgameappsblog india, Realgameappsstrategies, Realgameappstips, best Realgameappss, online Realgameappsguide, Realgameappsbonuses india, Realgameappstricks, play Realgameappsonline"
         type="website"
 />
       <Header />
@@ -85,7 +85,7 @@ const Blog = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold text-primary-foreground mb-4">Blog & Tips</h1>
             <p className="text-primary-foreground/70 text-lg max-w-xl mx-auto">
-              Expert rummy strategies, app reviews, latest offers, and industry news.
+              Expert Realgameappsstrategies, app reviews, latest offers, and industry news.
             </p>
           </motion.div>
         </div>

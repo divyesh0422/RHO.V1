@@ -44,14 +44,14 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto lg:mx-0"
             >
               <div className="relative flex-1 w-full">
-                <label htmlFor="hero-search" className="sr-only">Search rummy apps</label>
+                <label htmlFor="hero-search" className="sr-only">Search Realgameappss</label>
                 <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" aria-hidden="true" />
                 <input
                   id="hero-search"
                   type="search"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search rummy apps..."
+                  placeholder="Search Realgameappss..."
                   className="w-full h-12 pl-10 pr-4 rounded-xl bg-primary-foreground text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
                 />
               </div>
@@ -82,7 +82,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="hidden lg:block"
           >
-            <img src={heroTrophy} alt="Rummy trophy illustration" width={320} height={320} loading="eager" decoding="async" fetchPriority="high" className="animate-float drop-shadow-2xl" />
+            <img src={heroTrophy} alt="Realgameappstrophy illustration" width={320} height={320} loading="eager" decoding="async" fetchPriority="high" className="animate-float drop-shadow-2xl" />
           </motion.div>
         </div>
       </div>

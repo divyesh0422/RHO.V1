@@ -24,7 +24,7 @@ const footerLinks = [
     links: [
       { label: "Blog", to: "/blog" },
       { label: "How to Play", to: "/blog" },
-      { label: "Rummy Rules", to: "/blog" },
+      { label: "RealgameappsRules", to: "/blog" },
       { label: "FAQs", to: "/about" },
     ],
   },
@@ -49,10 +49,10 @@ const Footer = () => (
             <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
               <Gamepad2 className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-heading font-bold text-xl text-primary-foreground">RummyHub</span>
+            <span className="font-heading font-bold text-xl text-primary-foreground">Realgameapps</span>
           </div>
           <p className="text-xs leading-relaxed max-w-sm mb-5">
-            Your trusted guide to the best rummy apps in India. We verify every app so you can play with confidence and win real cash.
+            Your trusted guide to the best Realgameappss in India. We verify every app so you can play with confidence and win real cash.
           </p>
           <div className="flex items-center gap-2">
             {footerSocials.map((s) => (
@@ -92,7 +92,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p className="text-[11px]">© 2025 RummyHub. All rights reserved.</p>
+        <p className="text-[11px]">© 2025 Realgameapps. All rights reserved.</p>
         <div className="flex items-center gap-3 text-[11px]">
           <Link to="/disclaimer" className="hover:text-primary-foreground transition-colors">Disclaimer</Link>
           <span className="text-primary-foreground/20">|</span>

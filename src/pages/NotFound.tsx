@@ -6,15 +6,15 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = "404 — Page Not Found | RummyHub";
+    document.title = "404 — Page Not Found | Realgameapps";
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-muted">
       <SEO
-        title="404 — Page Not Found | RummyHub"
-        description="The page you're looking for doesn't exist. Head back to RummyHub to find India's best rummy apps."
+        title="404 — Page Not Found | Realgameapps"
+        description="The page you're looking for doesn't exist. Head back to Realgameapps to find India's best Realgameappss."
         path={location.pathname}
         noindex
       />

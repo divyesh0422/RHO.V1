@@ -11,8 +11,8 @@ import SEO from "@/components/SEO";
 const contactJsonLd = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  name: "Contact RummyHub",
-  description: "Get in touch with the RummyHub team for support, feedback, or app listing inquiries.",
+  name: "Contact Realgameapps",
+  description: "Get in touch with the Realgameapps team for support, feedback, or app listing inquiries.",
 };
 
 const Contact = () => {
@@ -28,11 +28,11 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
    
       <SEO
-          title="Contact RummyHub — Support, App Listing & Help"
-          description="Contact RummyHub for support, app listing, partnerships, or queries. Reach us via email, phone, or contact form. Fast response within 24 hours."
+          title="Contact Realgameapps — Support, App Listing & Help"
+          description="Contact Realgameapps for support, app listing, partnerships, or queries. Reach us via email, phone, or contact form. Fast response within 24 hours."
           path="/contact"
           jsonLd={contactJsonLd}
-          keywords="contact rummyhub, rummy support india, rummy app listing, rummy help, contact rummy website, rummyhub email support"
+          keywords="contact Realgameapps, Realgameappssupport india, Realgameapps listing, Realgameappshelp, contact Realgameappswebsite, Realgameapps email support"
           type="website"
 />
       <Header />
@@ -53,8 +53,8 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-5">
             {[
-              { icon: Mail, title: "Email Us", value: "support@rummyhub.in", desc: "For general inquiries" },
-              { icon: Phone, title: "Call Us", value: "+91 98765 43210", desc: "Mon-Sat, 10am-7pm IST" },
+              { icon: Mail, title: "Email Us", value: "support@Realgameapps.in", desc: "For general inquiries" },
+              
               { icon: MapPin, title: "Visit Us", value: "Mumbai, Maharashtra", desc: "India" },
               { icon: Clock, title: "Response Time", value: "Within 24 hours", desc: "We reply fast!" },
             ].map((item, i) => (

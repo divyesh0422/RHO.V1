@@ -4,8 +4,8 @@ import { Shield, Zap, Users, Award } from "lucide-react";
 const features = [
   { icon: Shield, title: "100% Safe & Legal", desc: "All apps are RNG certified and legally approved for real money gaming in India." },
   { icon: Zap, title: "Instant Withdrawals", desc: "Get your winnings directly to your bank account or UPI within minutes." },
-  { icon: Users, title: "10M+ Active Players", desc: "Join the largest community of rummy players across India." },
-  { icon: Award, title: "Huge Bonuses", desc: "Exclusive welcome bonuses up to ₹10,000 on top rummy platforms." },
+  { icon: Users, title: "10M+ Active Players", desc: "Join the largest community of Realgameappsplayers across India." },
+  { icon: Award, title: "Huge Bonuses", desc: "Exclusive welcome bonuses up to ₹10,000 on top Realgameappsplatforms." },
 ];
 
 const WhyChooseUs = () => {
@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <h2 className="font-heading text-3xl font-bold text-foreground mb-2">Why Choose RummyHub?</h2>
+          <h2 className="font-heading text-3xl font-bold text-foreground mb-2">Why Choose Realgameapps?</h2>
           <p className="text-muted-foreground text-sm max-w-md mx-auto">We carefully review and verify every app so you can play with confidence.</p>
         </motion.div>
 

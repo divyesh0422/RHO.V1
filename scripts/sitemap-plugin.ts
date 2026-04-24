@@ -1,7 +1,7 @@
 import type { Plugin } from "vite";
 import { rummyApps } from "../src/data/rummyApps";
 
-const SITE_URL = "https://rummyhub.in";
+const SITE_URL = "https://Realgameapps.in";
 
 interface Route {
   path: string;
@@ -64,7 +64,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 export function sitemapPlugin(): Plugin {
   return {
-    name: "rummyhub-sitemap",
+    name: "Realgameapps-sitemap",
     apply: "build",
     generateBundle() {  
       this.emitFile({ 
