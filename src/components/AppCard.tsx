@@ -69,7 +69,7 @@ document.addEventListener("mousedown", handleClickOutside);
       {/* 🔥 MAIN IMAGE */}
       <div className="relative h-40 w-full overflow-hidden">
         <img
-          src='../../public/images/coverpage.jfif'
+          src='/images/coverpage.jfif'
           alt={app.name}
           loading="lazy"
           className="w-full h-full  group-hover:scale-105 transition-transform duration-300"
@@ -100,7 +100,7 @@ document.addEventListener("mousedown", handleClickOutside);
           {/* ✅ LOGO IMAGE (FIXED) */}
           <div className="w-12 h-12 rounded-xl overflow-hidden border bg-white shadow-sm">
             <img
-              src='../../public/images/small.jfif'
+              src='/images/small.jfif'
               alt={app.name}
               className="w-full h-full object-cover"
               loading="lazy"
