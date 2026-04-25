@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { lazy, Suspense } from "react";
 const Header = lazy(() => import("@/components/Header"));
 const Footer = lazy(() => import("@/components/Footer"));
+const FloatingSocial = lazy(() => import("@/components/FloatingSocial"));
 // import Header from "@/components/Header";
 // import Footer from "@/components/Footer";
 import SEO, { SITE_URL } from "@/components/SEO";
@@ -148,6 +149,7 @@ const Blog = () => {
           ))}
         </div>
       </main>
+      <FloatingSocial />
 
       <Footer />
     </div>
