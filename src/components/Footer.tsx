@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
-import { Gamepad2, MessageCircle, Send, Play, Camera, AtSign } from "lucide-react";
+// import { Gamepad2, MessageCircle, Send, Play, Camera, AtSign } from "lucide-react";
+import { Gamepad2 } from "lucide-react";
+import { FaWhatsapp, FaTelegramPlane, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const footerSocials = [
-  { icon: MessageCircle, href: "#", label: "WhatsApp" },
-  { icon: Send, href: "#", label: "Telegram" },
-  { icon: Play, href: "#", label: "YouTube" },
-  { icon: Camera, href: "#", label: "Instagram" },
-  { icon: AtSign, href: "#", label: "Twitter" },
+  { icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+  { icon: FaTelegramPlane, href: "#", label: "Telegram" },
+  { icon: FaYoutube, href: "#", label: "YouTube" },
+  { icon: FaInstagram, href: "#", label: "Instagram" },
+  { icon: FaTwitter, href: "#", label: "Twitter" },
 ];
 
 const footerLinks = [

@@ -95,9 +95,16 @@ const Blog = () => {
         {/* Featured Post */}
         <motion.article initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} className="bg-card rounded-2xl border border-border overflow-hidden shadow-card mb-10">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className={`bg-gradient-to-br ${blogPosts[0].color} p-10 flex items-center justify-center min-h-[200px]`}>
+            {/* <div className={`bg-gradient-to-br ${blogPosts[0].color} p-10 flex items-center justify-center min-h-[200px]`}>
               <span className="font-heading text-5xl font-extrabold text-primary-foreground/20">01</span>
-            </div>
+            </div> */}
+            <div className="{`bg-gradient-to-br ${blogPosts[0].color} min-h-[200px] overflow-hidden">
+  <img
+    src={blogPosts[0].image}
+    alt={blogPosts[0].title}
+    className="w-full h-full object-cover"
+  />
+</div>
             <div className="p-8 flex flex-col justify-center">
               <span className="text-xs font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full w-fit mb-3">{blogPosts[0].category}</span>
               <h2 className="font-heading text-2xl font-bold text-foreground mb-2">{blogPosts[0].title}</h2>
@@ -117,11 +124,13 @@ const Blog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.slice(1).map((post, i) => (
             <motion.article key={post.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }} className="bg-card rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-all group">
-              <div className={`bg-gradient-to-br ${post.color} h-36 flex items-center justify-center`}>
-                <span className="font-heading text-4xl font-extrabold text-primary-foreground/20">
-                  {String(post.id).padStart(2, "0")}
-                </span>
-              </div>
+              <div className="h-36 overflow-hidden">
+  <img
+    src={post.image}
+    alt={post.title}
+    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+  />
+</div>
               <div className="p-5">
                 <span className="text-[10px] font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">{post.category}</span>
                 <h3 className="font-heading font-bold text-foreground mt-2 mb-1.5 text-sm leading-snug group-hover:text-primary transition-colors">{post.title}</h3>

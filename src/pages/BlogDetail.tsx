@@ -251,7 +251,14 @@ const BlogDetail = () => {
       </Suspense>
 
       {/* Hero */}
-      <section className={`bg-gradient-to-br ${post.color} py-14 md:py-20`}>
+      <section
+  className="py-14 md:py-20 bg-cover bg-center"
+  style={
+    post.background?.startsWith("/images")
+      ? { backgroundImage: `url(${post.background})` }
+      : {}
+  }
+>
         <div className="container max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <Link
@@ -329,7 +336,7 @@ const BlogDetail = () => {
                   to={`/blog/${p.slug}`}
                   className="flex gap-3 items-start p-4 rounded-xl border border-border bg-card hover:shadow-card-hover transition-all group"
                 >
-                  <div className={`bg-gradient-to-br ${p.color} w-10 h-10 rounded-lg flex-shrink-0 flex items-center justify-center`}>
+                  <div className={`bg-gradient-to-br ${p.background} w-10 h-10 rounded-lg flex-shrink-0 flex items-center justify-center`}>
                     <span className="text-white font-bold text-xs">{String(p.id).padStart(2, "0")}</span>
                   </div>
                   <div>
