@@ -7,8 +7,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import { SearchProvider } from "./context/SearchContext.tsx";
+import ReactGA from "react-ga4";
 
 // Code-split secondary routes to keep initial bundle lean
+
+ReactGA.initialize("G-YXYXCLDT44"); 
 const AppDetail = lazy(() => import("./pages/AppDetail.tsx"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail.tsx"));
 const About = lazy(() => import("./pages/About.tsx"));
