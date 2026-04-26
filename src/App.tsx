@@ -11,7 +11,6 @@ import ReactGA from "react-ga4";
 
 // Code-split secondary routes to keep initial bundle lean
 
-ReactGA.initialize("G-YXYXCLDT44"); 
 const AppDetail = lazy(() => import("./pages/AppDetail.tsx"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail.tsx"));
 const About = lazy(() => import("./pages/About.tsx"));
