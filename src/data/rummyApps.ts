@@ -27,7 +27,7 @@ export interface RummyApp {
 export const rummyApps: RummyApp[] = [
   {
     id: 1,
-    slug: "share.in7game.org/share/agent/AAW986C2?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0=",
+    slug: "",
     name: "in7",
     image: "https://source.unsplash.com/400x300/?rummy,card-game",
     tagline: "India's #1 Realgameapps",

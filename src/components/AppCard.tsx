@@ -176,7 +176,7 @@ document.addEventListener("mousedown", handleClickOutside);
         <div className="flex gap-2">
           {/* Download */}
           <a
-            href={`/redirect/${app.slug}`}
+            href="https://share.in7game.org/share/agent/AAW986C2?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0="
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 h-11 rounded-xl bg-red-600 text-white font-semibold text-sm flex items-center justify-center gap-2 hover:opacity-90"
