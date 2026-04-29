@@ -82,7 +82,7 @@ export const rummyApps: RummyApp[] = [
 
 {
     id: 4,
-    slug: "rummy-circle",
+    slug: "Sona Bit",
     name: "Sona Bit",
     image: "https://google.sona.bet/50002/resources/banner4.png",
     logo: "/images/cover-5.jpeg",
@@ -130,7 +130,7 @@ export const rummyApps: RummyApp[] = [
     downloadUrl: "https://invite.23nano.click/88888-in-1/index.html?uid=2047963559168614401&type=1&invite=qAbwON",
   },
 {
-    id: 5,
+    id: 6,
     slug: "rummy-circle",
     name: "23nano",
     image: "https://google.betm77game.com/99999/resources/banner1.png",
@@ -155,7 +155,7 @@ export const rummyApps: RummyApp[] = [
   },
 
   {
-    id: 5,
+    id: 7,
     slug: "rummy-circle",
     name: "23nano",
     image: "javascript:redirect1()",
