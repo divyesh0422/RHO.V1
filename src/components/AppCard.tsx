@@ -69,7 +69,7 @@ document.addEventListener("mousedown", handleClickOutside);
       {/* 🔥 MAIN IMAGE */}
       <div className="relative h-40 w-full overflow-hidden">
         <img
-          src='/images/logo.PNG'
+          src='/images/Master--benner.jpeg'
           alt={app.name}
           loading="lazy"
           className="w-full h-full  group-hover:scale-105 transition-transform duration-300"
