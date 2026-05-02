@@ -178,7 +178,7 @@ export const rummyApps: RummyApp[] = [
     established: "2012",
     downloadUrl: "https://chrstm.com/aw/quabd6?f=w&p=wa&l=en&tp=m147&rtk=TVHoXwO8Rg%2BUcq%2FB8RXATEU4UwOr7KYEwWFoE6673NfMxeLT5E8JWPmsWeKdoUri7uqTHQg0euekdy1R1nh60FhpQEyEj0%2FdmiqDtSLffG7IBS8PsQOQamDTeH1B11nTTMvZcTGXx2HsN5FZUy4RdCoRc5Nre5TVmTtFVNe04k9BDgj4azTThfsDLRD%2FzFed&scenes=&scene=",
   },
-   {
+{
     id:8,
     slug: "rummy-circle",
     name: "LAMA GAME",
@@ -232,6 +232,63 @@ export const rummyApps: RummyApp[] = [
   established: "2024",
     downloadUrl: "https://invite.24lama.click/88884-in-1/index.html?uid=2047964741132656641&type=1&invite=FHYJCd",
   },
+  
+
+  {
+    id:9,
+    slug: "BIngo- Game",
+    name: "Bingo Game",
+    image: "https://invite.69bigowin.click/99996-in-1/resources/banner1.png",
+    logo: "images/logo/BIgi Win.jpeg",
+    tagline: "Play & Earn with Casual Games",
+  rating: 4.6,
+  reviews: "15K+",
+  bonus: "₹100 - ₹1000",
+  minWithdraw: "₹100",
+  category: ["new", "cash", "slots"],
+  color: "from-emerald-500 to-teal-500",
+  description: "A new real-cash gaming platform offering casual games, spin rewards, and referral earnings.",
+  
+  pros: [
+    "Low entry bonus",
+    "Referral earning system",
+    "Simple gameplay"
+  ],
+  
+  cons: [
+    "Not a verified brand",
+    "Mixed user reviews",
+    "Risk involved in real-money play"
+  ],
+  
+  paymentMethods: ["UPI", "Paytm", "Wallet"],
+  platforms: ["Android", "Web"],
+  
+  gameTypes: ["Spin", "Slots", "Casual Games","Spin",
+  "Slots",
+  "Casual Games",
+  "Card Games",
+  "Rummy",
+  "Poker",
+  "Teen Patti",
+  "Fantasy Sports",
+  "Arcade Games",
+  "Quiz Games",
+  "Lucky Draw",
+  "Scratch Cards",
+  "Dice Games",
+  "Fishing Games",
+  "Roulette",
+  "Jackpot Games",
+  "Mini Games",
+  "Multiplayer Games"],
+  
+  maxBonus: "₹500",
+  referralBonus: "₹100 - ₹300",
+  established: "2024",
+    downloadUrl: "https://invite.69bigowin.click/99996-in-1/index.html?uid=2034327940897865730&type=1&invite=EBbfyo",
+  },
+  
 ];
 
 export  const categories = [
