@@ -8,7 +8,7 @@ export const rummyApps: RummyApp[] = [
   {
     id: 1,
     slug: "realgameapps-gold", // ✅ Clean slug for routing
-    name: "Y1 Gold",
+    name: "Y1 Game",
     image: "/images/benner/Y1.com.jpeg",
     logo: "/images/logo/Y1 GAME.jpeg",
     tagline: "India's #1 Realgameapps",
@@ -82,8 +82,8 @@ export const rummyApps: RummyApp[] = [
 
 {
     id: 4,
-    slug: "Sona Bit",
-    name: "Sona Bit",
+    slug: "Sona Game",
+    name: "Sona Game",
     image: "https://google.sona.bet/50002/resources/banner4.png",
     logo: "/images/cover-5.jpeg",
     tagline: "Trusted by 5Cr+ Players",
@@ -157,7 +157,7 @@ export const rummyApps: RummyApp[] = [
   {
     id: 7,
     slug: "rummy-circle",
-    name: "23nano",
+    name: "nano",
     image: "javascript:redirect1()",
     logo: "href=./resources/favicon.png",
     tagline: "Trusted by 5Cr+ Players",
