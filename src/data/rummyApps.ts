@@ -220,10 +220,7 @@ export const rummyApps: RummyApp[] = [
   "Slots",
   "Casual Games",
   "Card Games",
-  "Rummy",
-  "Poker",
-  "Teen Patti",
-  "Fantasy Sports",
+
   "Arcade Games",
   "Quiz Games",
   "Lucky Draw",
