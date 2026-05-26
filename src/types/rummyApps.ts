@@ -3,6 +3,7 @@ export interface RummyApp {
   slug: string;
   name: string;
   image: string; // ✅ added
+   bg_image: string; 
   logo: string
   tagline: string;
   rating: number;
