@@ -101,7 +101,7 @@ const Footer = () => (
           <Link to="/terms" className="hover:text-primary-foreground transition-colors">Terms of Use</Link>
         </div>
         <p className="text-[11px] text-center sm:text-right max-w-sm">
-          For informational purposes only. Play responsibly. Must be 18+.
+          For informational purposes only. vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvPlay responsibly. Must be 18+.
         </p>
       </div>
     </div>
