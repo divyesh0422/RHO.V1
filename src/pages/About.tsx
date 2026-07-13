@@ -252,7 +252,7 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed">
               We aim to become India's most reliable source
               for safe gaming app discovery, expert reviews,
-              and responsible gaming awareness.
+              and responsible gaming awareness.llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
             </p>
           </motion.article>
         </section>

@@ -428,7 +428,7 @@ const Blog = () => {
                 to="/contact"
                 className="inline-flex items-center justify-center rounded-xl border border-border px-5 py-3 font-medium hover:bg-muted transition-colors"
               >
-                Contact
+                Contact nnnnnnnn
               </Link>
             </div>
           </motion.div>
